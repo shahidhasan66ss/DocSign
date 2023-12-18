@@ -1,0 +1,145 @@
+/* Profile.css */
+
+.app {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+  }
+.profile-container{
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+  
+  .profile-cards {
+    display: flex;
+    gap: 25px;
+  }
+  
+  .profile-card {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(29, 29, 29, 0.216);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 35%;
+    align-items: center;
+  }
+  
+
+
+  .profile-header {
+    align-items: center;
+    height: auto;
+    width: 100%;
+  }
+
+   
+  .profile-pic {
+    position: relative;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 1px solid #d7d7d7;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 25px;
+  }
+  
+  .profile-pic:hover .profile-pic__content {
+    opacity: 1;
+  }
+  
+  .profile-pic:hover .profile-pic__image {
+    opacity: .5;
+  }
+  
+  .profile-pic__image {
+    object-fit: cover;
+    opacity: 1;
+    transition: opacity .2s ease-in-out;
+  }
+  
+  .profile-pic__content {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    opacity: 0;
+    transition: opacity .2s ease-in-out;
+    background-color: #00000032;
+  }
+  
+  .profile-pic__icon {
+    color: white;
+    padding-bottom: 8px;
+  }
+  
+  .fas {
+    font-size: 20px;
+  }
+  
+  .profile-pic__button {
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 50%;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  
+  .profile-info h2 {
+    margin-bottom: 5px;
+    font-size: 1.5rem;
+  }
+
+  .profile-info span{
+    color: #535353;
+    font-size: 15px;
+    display: block;
+    margin-top: 8px;
+  }
+  
+  .profile-section {
+    padding: 20px;
+  }
+  
+
+
+  .edit-profile-btn{
+    background-color: #111;
+    margin-top: 50px;
+    border: 1px solid rgb(120, 120, 120);
+  }
+
+  .edit-profile-btn:hover{
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid rgb(120, 120, 120);
+    transition: all .2s;
+
+  }
+
+  .profile-card-right {
+    background-color: #fff;
+    box-shadow: 0 4px 8px rgba(29, 29, 29, 0.216);
+    border-radius: 10px;
+    overflow: hidden;
+    width: 50%;
+    align-items: center;
+  }
+
+
+  .approval-workflow p,
+  .approval-history ul {
+    margin-top: 0;
+  }
+  
+
+ 

@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .side-nav {
+    width: 180px;
+    background-color: #ffffff;
+    overflow-x: hidden;
+    transition: 0.3s;
+    box-shadow: -5px 0 15px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    top: 60px; /* Adjust this value to match the height of your top bar */
+    bottom: 0;
+    left: 0;
+    padding-top: 0;
+  }
+  
+  .side-nav a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #3f4040;
+    display: flex;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+    border-radius: 0 8px 8px 0; /* Round the left side of the item */
+  }
+  
+  .side-nav a i {
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+  }
+  
+  /* Style non-active menu items on hover */
+  .side-nav a:hover {
+    background: #d5d5d5;
+  }
+  
+  .side-nav.closed {
+    transform: translateX(-250px); /* Adjust the width based on your sidebar width */
+  }
+  
+  .active {
+    background: linear-gradient(to right, #161719, #38424c);
+    border-radius: 8px;
+    
+  }
+
+
+  a.active{
+    color: #ffffff;
+  }
+  
+  .side-nav a.active:hover {
+    background: linear-gradient(to right, #161719, #38424c);
+    border-radius: 8px;
+  }
+  

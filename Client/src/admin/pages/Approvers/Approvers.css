@@ -1,0 +1,128 @@
+
+  .approvers-container {
+    width: 85%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .approver-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: #d5d5d5b3;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease;
+    cursor: pointer;
+    width: 220px;
+    height: 250px;
+    padding: 10px;
+  }
+
+  .profile-pic-area{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+  }
+  
+  .profile-pic {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+  }
+
+
+
+  .details {
+    margin-left: 10px;
+    flex-grow: 1;
+  }
+
+  /* Form style */
+
+
+.create-approver-button {
+    position: fixed;
+    right: 20px;
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .create-approver-button:hover {
+    background-color: #45a049;
+  }
+  
+  .create-approver-form-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* semi-transparent black overlay */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .create-approver-form {
+    background: #ffffff;
+    width: 400px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .create-approver-form h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .create-approver-form label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .create-approver-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .create-approver-form button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .create-approver-form button:hover {
+    background-color: #45a049;
+  }
+  
+  .create-approver-form button + button {
+    margin-left: 10px;
+    background-color: #f44336;
+  }
+  
+  .create-approver-form button + button:hover {
+    background-color: #d32f2f;
+  }
+  
+
+
+

@@ -1,0 +1,97 @@
+/* src/DataTable.css */
+
+.pending-list{
+    width: 100%;
+    padding-right: 50px;
+    margin-top: 20px;
+}
+
+.pending-header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr  1fr;
+    font-weight: bold;
+    background-color: #f2f2f2;
+    border: 1px solid #ccc;
+    padding: 15px 0 15px 15px;
+    top: 60px;
+    position: sticky;
+    
+  }
+
+  .pending-header .sender {
+    padding-left: 10px;
+  }
+
+  .pending-header .type {
+    padding-left: 10px;
+  }
+  
+  .pending-header .file-name {
+    padding-left: 10px;
+  }
+  
+  .pending-header .actions {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+  }
+
+
+.list-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    border: 1px solid #e4e4e4;
+    padding: 15px 0 15px 15px;
+    width: 100%; 
+    background-color: #fff; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.2s; 
+    cursor: pointer; 
+    font-size: 18px;
+  }
+
+
+
+/* Define styles for the PDF overlay */
+.pdf-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1000; /* Adjust the z-index value as needed */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+  }
+  
+  /* Define styles for the PDF dialog box */
+  .pdf-dialog {
+    background: white;
+    padding: 20px;
+    max-width: 90%; /* Adjust the width as needed */
+    max-height: 90%; /* Adjust the height as needed */
+    overflow: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for depth */
+  }
+
+
+
+  
+  .centered-dialog {
+    background: white;
+    margin-top: 500px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    width: 50%;
+    height: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  
